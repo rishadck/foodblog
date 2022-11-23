@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Sislaf</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'h/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('h/images/demo/backgrounds/01.png');"> 
+  <!-- ################################################################################################ -->
+ 
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+     <div class="fl_left">
+       <!-- &lt;!&ndash; ################################################################################################ &ndash;&gt; -->
+       <h2 style="color:brown">AVODHA SHOP</h2>
+       <!-- &lt;!&ndash; ################################################################################################ &ndash;&gt; -->
+   </div>
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <!-- <ul class="nospace">
+          <li><a href="{% url 'cartDeatails' %}"><i class="fas fa-home"></i></a></li> -->
+          <nav id="mainav" class="fl_right">
+            <!-- ################################################################################################ -->
+            <ul class="clear">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a class="active" href="#">Pages</a>
+                <li><a class="active" href="{% url 'cartDeatails' %}"><i class="fa fa-shopping-cart" style="color: #04AA6D;"font-size:20px " ></i></a>
+                <li><a class="active" href="#">LOGOUT</a>
+                  <li><a class="active" href="#">LOGIN</a>
+                    <li><a class="active" href="#">REGISTER</a>
+                <ul>
+<!--       
+          <li id="searchform">
+            <div>
+              <form action="{% url 'search' %}" method="get">
+                
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search  your food&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+  </div>
+  <!-- ##################################
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <!-- <article>
+      <h3 class="heading">AVODHA SHOP</h3>
+      <p>Libero sed ullamcorper nibh dignissim et curabitur cursus scelerisque metus sit amet sodales justo auctor sit amet proin quis lacus non nisi.</p>
+      <footer>
+       
+      </footer>
+    </article>
+  </div> --> 
+
+</div>
+
+<!-- <div class="container-fluid">
+  <section id="introblocks">
+
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="nospace group btmspace-80">
+      <li class="one_third first">
+        <figure><a class="imgover" href="#"><img src="{% static 'h/images/demo/348x261.png' %}" alt=""></a>
+          <figcaption>
+            <h6 class="heading">Viverra congue</h6>
+            <p>Aenean metus purus consectetur ac sagittis in malesuada quis nunc ut sed risus nulla etiam gravida velit.</p>
+          </figcaption>
+        </figure>
+      </li>
+     
+    </ul>
+    
+    </div>
+  </div>
+  </section>
+</div> -->
+  
+    <!-- </section> -->
+  
+    <!-- <hr class="btmspace-80">
+ 
+    <div class="clear"></div> -->
+  <!-- </main> -->
+<!-- </div> --> 
+    
+
+  
+</div>
+
+<script src="{% static 'h/layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'h/layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'h/layout/scripts/jquery.mobilemenu.js' %}"></script>
+
+ {% block content %}
+ {% endblock %}
+</body>
+</html>
+

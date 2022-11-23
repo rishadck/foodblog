@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Sislcccaf</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'h/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+/header>
+  </div>
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+<!--      <div class="fl_left">-->
+<!--        &lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+<!--        <ul class="nospace">-->
+<!--          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>-->
+<!--          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>-->
+<!--        </ul>-->
+<!--        &lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+<!--      </div>-->
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <!-- <li><a href="index.html"><i class="fas fa-home"></i></a></li> -->
+<!--          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>-->
+<!--          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>-->
+<!--          <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>-->
+          <li id="searchform">
+            <div>
+              <form action="{% url 'search' %}" method="get">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search  your food&hellip;" name="q">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+  </div>
+  <div class="wrapper row3">
+   
+    <main class="hoc container clear">
+    
+     <section id="introblocks">
+       
+       <ul class="nospace group btmspace-80">
+         {% for i in pr %}
+          <li class="one_third">
+           
+           
+            <figure><a class="imgover" href="{{i.get_url}}"><img src="{{i.img.url}}" alt="" style="height: 400;width: 400;"></a>
+        <figcaption>
+                <h6 class="heading">{{i.name}}</h6>
+               <p>{{i.disc}}.</p>
+               <h4>{{i.price}}</h4>
+               <br>
+               <p>stock left :{{i.stock}}</p>
+   
+               
+              </figcaption>
+             </figure>
+             {% endfor %}
+          </li>
+       </ul>
+     </section>
+     </main>
+  </div>
+</div>
+a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'h/layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'h/layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'h/layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>
